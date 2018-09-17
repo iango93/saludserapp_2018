@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: MyText
+  data_trans: 
+  user_hash: MyString
+
+two:
+  data: MyText
+  data_trans: 
+  user_hash: MyString

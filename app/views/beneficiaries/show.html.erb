@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @beneficiary.first_name %>
+</p>
+
+<p>
+  <strong>Second name:</strong>
+  <%= @beneficiary.second_name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @beneficiary.lastname %>
+</p>
+
+<p>
+  <strong>Second surname:</strong>
+  <%= @beneficiary.second_surname %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @beneficiary.customer %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @beneficiary.birthday %>
+</p>
+
+<p>
+  <strong>Relationship:</strong>
+  <%= @beneficiary.relationship %>
+</p>
+
+<p>
+  <strong>Identification:</strong>
+  <%= @beneficiary.identification %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @beneficiary.gender %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @beneficiary.state %>
+</p>
+
+<%= link_to 'Edit', edit_beneficiary_path(@beneficiary) %> |
+<%= link_to 'Back', beneficiaries_path %>

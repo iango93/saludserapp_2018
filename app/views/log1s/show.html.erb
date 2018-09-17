@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @log1.data %>
+</p>
+
+<p>
+  <strong>Data trans:</strong>
+  <%= @log1.data_trans %>
+</p>
+
+<p>
+  <strong>User hash:</strong>
+  <%= @log1.user_hash %>
+</p>
+
+<%= link_to 'Edit', edit_log1_path(@log1) %> |
+<%= link_to 'Back', log1s_path %>

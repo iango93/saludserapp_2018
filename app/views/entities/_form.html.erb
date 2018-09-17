@@ -1,0 +1,77 @@
+<%= form_with(model: entity, local: true) do |form| %>
+  <% if entity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
+
+      <ul>
+      <% entity.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :service %>
+    <%= form.text_field :service %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name_eps %>
+    <%= form.text_field :name_eps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name_afp %>
+    <%= form.text_field :name_afp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name_arl %>
+    <%= form.text_field :name_arl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name_ccf %>
+    <%= form.text_field :name_ccf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :level_arl %>
+    <%= form.text_field :level_arl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :percent %>
+    <%= form.text_field :percent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.text_field :type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category_id %>
+    <%= form.text_field :category_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state_id %>
+    <%= form.text_field :state_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_id %>
+    <%= form.text_field :company_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

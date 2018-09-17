@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @headquarter.name %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @headquarter.code %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @headquarter.company %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @headquarter.address %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @headquarter.email %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @headquarter.state %>
+</p>
+
+<%= link_to 'Edit', edit_headquarter_path(@headquarter) %> |
+<%= link_to 'Back', headquarters_path %>

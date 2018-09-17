@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  indicative: 
+  number: 
+  type_phone: false
+  address: one
+  state: one
+
+two:
+  indicative: 
+  number: 
+  type_phone: false
+  address: two
+  state: two

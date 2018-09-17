@@ -1,3 +1,30 @@
 Rails.application.routes.draw do
+  resources :number_accounts
+  resources :incidents
+  resources :settleds
+  resources :beneficiaries
+  resources :accountnames
+  resources :roles
+  resources :staffs
+  resources :leads
+  resources :emails
+  resources :phones
+  resources :addresses
+  resources :customers
+  resources :log2s
+  resources :log1s
+  resources :payment_methods
+  resources :categories
+  resources :entities
+  resources :details
+  resources :invoices
+  resources :identifications
+  resources :consecutives
+  resources :folios
+  resources :headquarters
+  resources :states
+  resources :companies
+  resources :cities
+  resources :departments
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

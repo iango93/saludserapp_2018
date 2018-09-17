@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  service: MyString
+  name_eps: MyString
+  name_afp: MyString
+  name_arl: MyString
+  name_ccf: MyString
+  level_arl: 9.99
+  code: MyString
+  percent: 
+  type: 
+  category: one
+  state: one
+  company: one
+
+two:
+  service: MyString
+  name_eps: MyString
+  name_afp: MyString
+  name_arl: MyString
+  name_ccf: MyString
+  level_arl: 9.99
+  code: MyString
+  percent: 
+  type: 
+  category: two
+  state: two
+  company: two

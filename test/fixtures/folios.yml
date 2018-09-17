@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  folio: 
+  headquarter: one
+  customer: one
+
+two:
+  folio: 
+  headquarter: two
+  customer: two

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer: one
+  company: one
+  headquarter: one
+  payment_method: one
+  staff: one
+  state: one
+
+two:
+  customer: two
+  company: two
+  headquarter: two
+  payment_method: two
+  staff: two
+  state: two

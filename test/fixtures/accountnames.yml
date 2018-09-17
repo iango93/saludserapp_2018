@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type_account: MyString
+  address: one
+  identification: one
+  email: one
+
+two:
+  type_account: MyString
+  address: two
+  identification: two
+  email: two

@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Headquarters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Company</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>State</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @headquarters.each do |headquarter| %>
+      <tr>
+        <td><%= headquarter.name %></td>
+        <td><%= headquarter.code %></td>
+        <td><%= headquarter.company %></td>
+        <td><%= headquarter.address %></td>
+        <td><%= headquarter.email %></td>
+        <td><%= headquarter.state %></td>
+        <td><%= link_to 'Show', headquarter %></td>
+        <td><%= link_to 'Edit', edit_headquarter_path(headquarter) %></td>
+        <td><%= link_to 'Destroy', headquarter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Headquarter', new_headquarter_path %>

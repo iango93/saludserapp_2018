@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  eps: MyString
+  ccf: MyString
+  afp: MyString
+  arl: MyString
+  customer: one
+  company: one
+  online_contribution: MyString
+  online_contributioin_number: 
+  ccm: MyString
+  rut: MyString
+  bank_certification: MyString
+  headquarter: one
+  identification: one
+  personal_document: MyString
+
+two:
+  eps: MyString
+  ccf: MyString
+  afp: MyString
+  arl: MyString
+  customer: two
+  company: two
+  online_contribution: MyString
+  online_contributioin_number: 
+  ccm: MyString
+  rut: MyString
+  bank_certification: MyString
+  headquarter: two
+  identification: two
+  personal_document: MyString

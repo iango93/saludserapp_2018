@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @lead.first_name %>
+</p>
+
+<p>
+  <strong>Second name:</strong>
+  <%= @lead.second_name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @lead.lastname %>
+</p>
+
+<p>
+  <strong>Second suname:</strong>
+  <%= @lead.second_suname %>
+</p>
+
+<p>
+  <strong>Current work:</strong>
+  <%= @lead.current_work %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @lead.email %>
+</p>
+
+<p>
+  <strong>Advertising medium:</strong>
+  <%= @lead.advertising_medium %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @lead.address %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @lead.active %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @lead.customer_id %>
+</p>
+
+<%= link_to 'Edit', edit_lead_path(@lead) %> |
+<%= link_to 'Back', leads_path %>

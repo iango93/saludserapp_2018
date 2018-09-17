@@ -1,0 +1,47 @@
+<%= form_with(model: headquarter, local: true) do |form| %>
+  <% if headquarter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(headquarter.errors.count, "error") %> prohibited this headquarter from being saved:</h2>
+
+      <ul>
+      <% headquarter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_id %>
+    <%= form.text_field :company_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_id %>
+    <%= form.text_field :address_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email_id %>
+    <%= form.text_field :email_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state_id %>
+    <%= form.text_field :state_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @detail.price %>
+</p>
+
+<p>
+  <strong>Ibc:</strong>
+  <%= @detail.ibc %>
+</p>
+
+<p>
+  <strong>Type invoice:</strong>
+  <%= @detail.type_invoice %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @detail.quantity %>
+</p>
+
+<p>
+  <strong>Adjust:</strong>
+  <%= @detail.adjust %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @detail.description %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @detail.entity %>
+</p>
+
+<p>
+  <strong>Invoice:</strong>
+  <%= @detail.invoice %>
+</p>
+
+<%= link_to 'Edit', edit_detail_path(@detail) %> |
+<%= link_to 'Back', details_path %>

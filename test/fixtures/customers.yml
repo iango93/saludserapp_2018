@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_admission: 2018-09-16
+  first_name: MyString
+  second_name: MyString
+  lastname: MyString
+  second_surname: MyString
+  civil_status: MyString
+  gender: MyString
+  pregnancy: false
+  gestation_weeks: 
+  current_work: MyString
+  identification: one
+  address: one
+  email: one
+  staff: one
+  birthdate: 2018-09-16
+  advertising_medium: MyString
+  account: one
+  company: one
+  arrival_card_ccf: false
+  arrival_card_arl: false
+  ibc: 
+  state: one
+  entity: one
+
+two:
+  date_admission: 2018-09-16
+  first_name: MyString
+  second_name: MyString
+  lastname: MyString
+  second_surname: MyString
+  civil_status: MyString
+  gender: MyString
+  pregnancy: false
+  gestation_weeks: 
+  current_work: MyString
+  identification: two
+  address: two
+  email: two
+  staff: two
+  birthdate: 2018-09-16
+  advertising_medium: MyString
+  account: two
+  company: two
+  arrival_card_ccf: false
+  arrival_card_arl: false
+  ibc: 
+  state: two
+  entity: two

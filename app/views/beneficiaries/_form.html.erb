@@ -1,0 +1,67 @@
+<%= form_with(model: beneficiary, local: true) do |form| %>
+  <% if beneficiary.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(beneficiary.errors.count, "error") %> prohibited this beneficiary from being saved:</h2>
+
+      <ul>
+      <% beneficiary.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_name %>
+    <%= form.text_field :second_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastname %>
+    <%= form.text_field :lastname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_surname %>
+    <%= form.text_field :second_surname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :customer_id %>
+    <%= form.text_field :customer_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthday %>
+    <%= form.date_select :birthday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :relationship %>
+    <%= form.text_field :relationship %>
+  </div>
+
+  <div class="field">
+    <%= form.label :identification_id %>
+    <%= form.text_field :identification_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state_id %>
+    <%= form.text_field :state_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

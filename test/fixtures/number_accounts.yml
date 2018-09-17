@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bank: MyString
+  type_account: MyString
+  owner_account: MyString
+  identification: one
+
+two:
+  bank: MyString
+  type_account: MyString
+  owner_account: MyString
+  identification: two

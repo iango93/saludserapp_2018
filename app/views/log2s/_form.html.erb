@@ -1,0 +1,32 @@
+<%= form_with(model: log2, local: true) do |form| %>
+  <% if log2.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(log2.errors.count, "error") %> prohibited this log2 from being saved:</h2>
+
+      <ul>
+      <% log2.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.text_area :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_trans %>
+    <%= form.text_field :data_trans %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_hash %>
+    <%= form.text_field :user_hash %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

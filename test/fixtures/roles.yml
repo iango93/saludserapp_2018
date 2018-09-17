@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  role_staff: 
+  state: one
+
+two:
+  role_staff: 
+  state: two

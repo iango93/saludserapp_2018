@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Settleds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Eps</th>
+      <th>Ccf</th>
+      <th>Afp</th>
+      <th>Arl</th>
+      <th>Customer</th>
+      <th>Company</th>
+      <th>Online contribution</th>
+      <th>Online contributioin number</th>
+      <th>Ccm</th>
+      <th>Rut</th>
+      <th>Bank certification</th>
+      <th>Headquarter</th>
+      <th>Identification</th>
+      <th>Personal document</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @settleds.each do |settled| %>
+      <tr>
+        <td><%= settled.eps %></td>
+        <td><%= settled.ccf %></td>
+        <td><%= settled.afp %></td>
+        <td><%= settled.arl %></td>
+        <td><%= settled.customer %></td>
+        <td><%= settled.company %></td>
+        <td><%= settled.online_contribution %></td>
+        <td><%= settled.online_contributioin_number %></td>
+        <td><%= settled.ccm %></td>
+        <td><%= settled.rut %></td>
+        <td><%= settled.bank_certification %></td>
+        <td><%= settled.headquarter %></td>
+        <td><%= settled.identification %></td>
+        <td><%= settled.personal_document %></td>
+        <td><%= link_to 'Show', settled %></td>
+        <td><%= link_to 'Edit', edit_settled_path(settled) %></td>
+        <td><%= link_to 'Destroy', settled, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Settled', new_settled_path %>

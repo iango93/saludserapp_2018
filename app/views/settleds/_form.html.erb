@@ -1,0 +1,87 @@
+<%= form_with(model: settled, local: true) do |form| %>
+  <% if settled.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(settled.errors.count, "error") %> prohibited this settled from being saved:</h2>
+
+      <ul>
+      <% settled.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :eps %>
+    <%= form.text_field :eps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ccf %>
+    <%= form.text_field :ccf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :afp %>
+    <%= form.text_field :afp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arl %>
+    <%= form.text_field :arl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :customer_id %>
+    <%= form.text_field :customer_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_id %>
+    <%= form.text_field :company_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :online_contribution %>
+    <%= form.text_field :online_contribution %>
+  </div>
+
+  <div class="field">
+    <%= form.label :online_contributioin_number %>
+    <%= form.text_field :online_contributioin_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ccm %>
+    <%= form.text_field :ccm %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rut %>
+    <%= form.text_field :rut %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bank_certification %>
+    <%= form.text_field :bank_certification %>
+  </div>
+
+  <div class="field">
+    <%= form.label :headquarter_id %>
+    <%= form.text_field :headquarter_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :identification_id %>
+    <%= form.text_field :identification_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :personal_document %>
+    <%= form.text_field :personal_document %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

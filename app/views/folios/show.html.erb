@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Folio:</strong>
+  <%= @folio.folio %>
+</p>
+
+<p>
+  <strong>Headquarter:</strong>
+  <%= @folio.headquarter %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @folio.customer %>
+</p>
+
+<%= link_to 'Edit', edit_folio_path(@folio) %> |
+<%= link_to 'Back', folios_path %>

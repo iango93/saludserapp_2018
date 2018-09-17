@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  suffix: MyString
+  folio_company: 
+  company: one
+  customer: one
+
+two:
+  suffix: MyString
+  folio_company: 
+  company: two
+  customer: two

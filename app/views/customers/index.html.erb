@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date admission</th>
+      <th>First name</th>
+      <th>Second name</th>
+      <th>Lastname</th>
+      <th>Second surname</th>
+      <th>Civil status</th>
+      <th>Gender</th>
+      <th>Pregnancy</th>
+      <th>Gestation weeks</th>
+      <th>Current work</th>
+      <th>Identification</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Staff</th>
+      <th>Birthdate</th>
+      <th>Advertising medium</th>
+      <th>Account</th>
+      <th>Company</th>
+      <th>Arrival card ccf</th>
+      <th>Arrival card arl</th>
+      <th>Ibc</th>
+      <th>State</th>
+      <th>Entity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.date_admission %></td>
+        <td><%= customer.first_name %></td>
+        <td><%= customer.second_name %></td>
+        <td><%= customer.lastname %></td>
+        <td><%= customer.second_surname %></td>
+        <td><%= customer.civil_status %></td>
+        <td><%= customer.gender %></td>
+        <td><%= customer.pregnancy %></td>
+        <td><%= customer.gestation_weeks %></td>
+        <td><%= customer.current_work %></td>
+        <td><%= customer.identification %></td>
+        <td><%= customer.address %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.staff %></td>
+        <td><%= customer.birthdate %></td>
+        <td><%= customer.advertising_medium %></td>
+        <td><%= customer.account %></td>
+        <td><%= customer.company %></td>
+        <td><%= customer.arrival_card_ccf %></td>
+        <td><%= customer.arrival_card_arl %></td>
+        <td><%= customer.ibc %></td>
+        <td><%= customer.state %></td>
+        <td><%= customer.entity %></td>
+        <td><%= link_to 'Show', customer %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer', new_customer_path %>

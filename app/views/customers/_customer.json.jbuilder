@@ -1,0 +1,2 @@
+json.extract! customer, :id, :date_admission, :first_name, :second_name, :lastname, :second_surname, :civil_status, :gender, :pregnancy, :gestation_weeks, :current_work, :identification_id, :address_id, :email_id, :staff_id, :birthdate, :advertising_medium, :account_id, :company_id, :arrival_card_ccf, :arrival_card_arl, :ibc, :state_id, :entity_id, :created_at, :updated_at
+json.url customer_url(customer, format: :json)

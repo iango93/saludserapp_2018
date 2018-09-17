@@ -1,0 +1,132 @@
+<%= form_with(model: customer, local: true) do |form| %>
+  <% if customer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(customer.errors.count, "error") %> prohibited this customer from being saved:</h2>
+
+      <ul>
+      <% customer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date_admission %>
+    <%= form.date_select :date_admission %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_name %>
+    <%= form.text_field :second_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastname %>
+    <%= form.text_field :lastname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_surname %>
+    <%= form.text_field :second_surname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :civil_status %>
+    <%= form.text_field :civil_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pregnancy %>
+    <%= form.check_box :pregnancy %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gestation_weeks %>
+    <%= form.text_field :gestation_weeks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :current_work %>
+    <%= form.text_field :current_work %>
+  </div>
+
+  <div class="field">
+    <%= form.label :identification_id %>
+    <%= form.text_field :identification_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_id %>
+    <%= form.text_field :address_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email_id %>
+    <%= form.text_field :email_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staff_id %>
+    <%= form.text_field :staff_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthdate %>
+    <%= form.date_select :birthdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advertising_medium %>
+    <%= form.text_field :advertising_medium %>
+  </div>
+
+  <div class="field">
+    <%= form.label :account_id %>
+    <%= form.text_field :account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company_id %>
+    <%= form.text_field :company_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arrival_card_ccf %>
+    <%= form.check_box :arrival_card_ccf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arrival_card_arl %>
+    <%= form.check_box :arrival_card_arl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ibc %>
+    <%= form.text_field :ibc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state_id %>
+    <%= form.text_field :state_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :entity_id %>
+    <%= form.text_field :entity_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
